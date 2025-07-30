@@ -390,25 +390,35 @@ Memory analysis complete!
 
 | Memory Section | Variable/Function | Address (ที่แสดงออกมา) | Memory Type |
 |----------------|-------------------|----------------------|-------------|
-| Stack | stack_var | 0x_______ | SRAM |
-| Global SRAM | sram_buffer | 0x_______ | SRAM |
-| Flash | flash_string | 0x_______ | Flash |
-| Heap | heap_ptr | 0x_______ | SRAM |
+| Stack | stack_var | 0x3ffb4550 | SRAM |
+| Global SRAM | sram_buffer | 0x3ffb16ac | SRAM |
+| Flash | flash_string | 0x3f407b64 | Flash |
+| Heap | heap_ptr | 0x3ffb5264 | SRAM |
 
 **Table 2.2: Memory Usage Summary**
 
 | Memory Type | Free Size (bytes) | Total Size (bytes) |
 |-------------|-------------------|--------------------|
-| Internal SRAM | _________ | 520,192 |
-| Flash Memory | _________ | varies |
-| DMA Memory | _________ | varies |
+| Internal SRAM | 380096 | 520,192 |
+| Flash Memory | 303096 | varies |
+| DMA Memory | 172032 | varies |
 
 ### คำถามวิเคราะห์ (ง่าย)
 
 1. **Memory Types**: SRAM และ Flash Memory ใช้เก็บข้อมูลประเภทไหน?
-2. **Address Ranges**: ตัวแปรแต่ละประเภทอยู่ใน address range ไหน?
-3. **Memory Usage**: ESP32 มี memory ทั้งหมดเท่าไร และใช้ไปเท่าไร?
+```c
 
+```
+ 
+2. **Address Ranges**: ตัวแปรแต่ละประเภทอยู่ใน address range ไหน?
+```c
+
+```
+ 
+3. **Memory Usage**: ESP32 มี memory ทั้งหมดเท่าไร และใช้ไปเท่าไร?
+```c
+
+```
 ---
 
 ## 🔬 การทดลองที่ 3: การศึกษา Cache Performance
