@@ -98,6 +98,7 @@ networks:
 docker-compose up -d
 
 # เข้า container (คำสั่งเดิมที่คุ้นเคย)
+
 docker-compose exec esp32-dev bash
 ```
 
@@ -180,7 +181,8 @@ ESP32-Architecture-Lab/          # โฟลเดอร์หลักของ
 
 1. **Docker Commands**: คำสั่ง `docker-compose up -d` และ `docker-compose exec esp32-dev bash` ทำอะไร?
 ```c
-
+- เป็นคำสั่งสำหรับ เริ่มต้นและรันคอนเทนเนอร์ทั้งหมดที่ระบุไว้ในไฟล์ docker-compose.yml
+- -d (detached mode) หมายถึงรันคอนเทนเนอร์ในเบื้องหลัง (background) โดยไม่แสดงผลลัพธ์ในเทอร์มินัล
 ```
 
 2. **ESP-IDF Tools**: เครื่องมือไหนจาก Lab4 ที่จะใช้ในการ build โปรแกรม ESP32?
